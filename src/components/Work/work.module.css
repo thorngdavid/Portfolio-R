@@ -1,0 +1,141 @@
+.work {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.work h1 {
+    color: white;
+    position: absolute;
+    top: 9%;
+    font-size: 18px;
+}
+.worksection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    gap: 20%;
+}
+/* Icon */
+.techIcon {
+    display: flex;
+    flex-direction: column;
+}
+.workIconRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 8px 10px;
+    padding: 10px;
+}
+.workIcon img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 40%;
+    padding: 10px;
+    margin: 0 10px;
+}
+.workIcon h3 {
+    color: white;
+    font-size: 15px;
+}
+
+/* Info */
+.workinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.workinfo1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.workinfo1 img {
+    width: 100px;
+    height: 80px;
+}
+.workintro {
+    display: flex;
+    flex-direction: column;
+}
+.workintro h2 {
+    color: white;
+    font-size: 18px;
+}
+.workintro p {
+    color: white;
+    margin-bottom: 10px;
+}
+.workduty li {
+    color: white;
+    margin: 5px 0;
+}
+@media (max-width: 1200px){
+    .worksection {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .workinfo {
+        gap: 10px;
+    }
+    .workinfo1 img {
+        width: 35px;
+        height: 35px;
+    }
+    .workduty {
+        width: 300px;
+    }
+    .workIcon img {
+        width: 35px;
+        height: 35px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    .workIcon h3 {
+        font-size: 8px;
+    }
+    .work h1 {
+        font-size: 13px;
+    }
+    .workintro h2 {
+        font-size: 13px;
+        font-weight: 800;
+    }
+    .workintro p {
+        font-size: 11px;
+    }
+    .workduty li {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .workduty {
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px){
+    .workduty {
+        width: 220px;
+    }
+    .workIcon {
+        margin: 0;
+    }
+}

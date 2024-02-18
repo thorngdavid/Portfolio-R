@@ -1,0 +1,158 @@
+.contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.contact h1 {
+    color: white;
+    position: absolute;
+    top: 9%;
+    font-size: 18px;
+}
+.contact hr {
+    color: white;
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    width: 80%;
+}
+.contact h3 {
+    color: white;
+    position: absolute;
+    top: 20%;
+    font-size: 15px;
+
+}
+.line {
+    width: 90%;
+    border: 1px solid white;
+}
+
+.intro {
+    color: white;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.Section1 {
+    width: 100%;
+}
+.Section1 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.inputField {
+    width: 500px;
+    padding: 13px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+.textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.verificationContainer {
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verificationContainer p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+.randomTextContainer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.randomTextContainer span {
+    border: 1px solid gray;
+    padding: 6px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.verifyinputField {
+    border: 1px solid gray;
+    background: black;
+    color: white;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 20px;
+    margin-top: 13px;
+
+}
+.verifyButton {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0 10px;
+    height: 25px;
+    background: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.errorMessage {
+    margin-top: 10px;
+    color: red;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.sendMessageButton {
+    margin-top: 20px;
+    cursor: pointer;
+    height: 30px;
+    padding: 0 20px;
+}
+
+@media (max-width: 800px){
+    .contact h1 {
+        font-size: 13px;
+    }
+    .contact h3 {
+        font-size: 8px;
+        font-weight: 300;
+        width: 240px
+    }
+    .inputField {
+        width: 250px;
+        font-size: 9px;
+    }
+    .verificationContainer {
+        width: 250px;
+    }
+    .verifyinputField {
+        font-size: 9px;
+    }
+    .randomTextContainer span {
+        font-size: 10px;
+    }
+    .verificationContainer p {
+        font-size: 10px;
+    }
+}
