@@ -1,20 +1,13 @@
 .footer {
-    text-align: center;
     padding: 13px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.footer p {
-  width: 100%;
-  height: 3px;
-  background: rgb(91,91,91);
-  position: relative;
-  bottom: 10px;
+    background: rgb(255, 255, 255);
 }
 .footer pre {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   font-weight: 600;
   font-family: "Indie Flower", cursive;
