@@ -124,7 +124,16 @@
     border-radius: 8px;
     border: 0;
 }
-
+.verificationPassed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.verificationPassed img {
+    width: 40px; 
+    height: 40px; 
+}
 .errorMessage {
     margin-top: 10px;
     color: red;

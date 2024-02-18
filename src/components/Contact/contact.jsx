@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Style from './contact.module.css';
+import checkIcon from '../../assets/contact/check.png';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -9,6 +10,8 @@ const Contact = () => {
     const [randomText, setRandomText] = useState(generateRandomText());
     const [verificationResult, setVerificationResult] = useState('');
     const [showSendMessageButton, setShowSendMessageButton] = useState(false);
+    const [showVerificationPassed, setShowVerificationPassed] = useState(false);
+    const [verificationPassedTimeout, setVerificationPassedTimeout] = useState(null);
 
     function generateRandomText() {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -23,6 +26,15 @@ const Contact = () => {
         if (lowercaseVerification === lowercaseRandomText) {
             setShowSendMessageButton(true);
             setVerificationResult('');
+            setShowVerificationPassed(true);
+
+            // Hide the "Verification Passed" message after 3 seconds
+            const timeoutId = setTimeout(() => {
+                setShowVerificationPassed(false);
+            }, 3000);
+
+            // Save the timeout ID
+            setVerificationPassedTimeout(timeoutId);
         } else {
             setVerificationResult('Incorrect. Please try again.');
             setShowSendMessageButton(false);
@@ -62,9 +74,7 @@ const Contact = () => {
             <div className={Style.formContainer}>
                 <div className={Style.Section1}>
                     <form onKeyDown={handleKeyDown}>
-                        {/* Show error messages for message form inputs only when verification passes */}
                         {(!name && verificationResult && showSendMessageButton) && <p className={Style.errorMessage}>Please enter your name.</p>}
-                        {/* Your Name */}
                         <input
                             type="text"
                             placeholder="Your Name"
@@ -74,7 +84,6 @@ const Contact = () => {
                         />
 
                         {(!email && verificationResult && showSendMessageButton) && <p className={Style.errorMessage}>Please enter your email.</p>}
-                        {/* Email */}
                         <input
                             type="email"
                             placeholder="Email"
@@ -84,7 +93,6 @@ const Contact = () => {
                         />
 
                         {(!message && verificationResult && showSendMessageButton) && <p className={Style.errorMessage}>Please enter your message.</p>}
-                        {/* Message */}
                         <textarea
                             placeholder="Message"
                             value={message}
@@ -111,15 +119,27 @@ const Contact = () => {
                                 <button type="button" onClick={handleVerificationSubmit} className={Style.verifyButton}>
                                     Verify
                                 </button>
+                                {showVerificationPassed && (
+                                    <div className={Style.verificationPassed}>
+                                        <img src={checkIcon} alt="Verification Passed" />
+                                    </div>
+                                )}
                                 {verificationResult && !showSendMessageButton && <p className={Style.errorMessage}>{verificationResult}</p>}
                             </div>
                         )}
 
                         {/* Send Message Button */}
                         {showSendMessageButton && (
-                            <button type="button" onClick={handleSendMessage} className={Style.sendMessageButton}>
-                                Send
-                            </button>
+                            <>
+                                <button type="button" onClick={handleSendMessage} className={Style.sendMessageButton}>
+                                    Send
+                                </button>
+                                {showVerificationPassed && (
+                                    <div className={Style.verificationPassed}>
+                                        <img src={checkIcon} alt="Verification Passed" />
+                                    </div>
+                                )}
+                            </>
                         )}
                     </form>
                 </div>
