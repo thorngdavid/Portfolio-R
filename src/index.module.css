@@ -4,10 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
     font-family: "Exo 2", sans-serif;
 }
 body {
     background: black;
-    min-height: 100vh;
 }
