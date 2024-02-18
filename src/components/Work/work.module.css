@@ -40,12 +40,12 @@
     padding: 10px;
 }
 .workIcon img {
-    width: 60px;
-    height: 60px;
-    border: 2px solid white;
+    width: 65px;
+    height: 65px;
+    border: 3px solid rgb(91, 91, 91);
     border-radius: 40%;
-    padding: 10px;
     margin: 0 10px;
+    padding: 10px;
 }
 .workIcon h3 {
     color: white;
@@ -63,14 +63,19 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid white;
-    border-radius: 20px;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 15px;
     margin-top: 15px;
     padding: 10px;
 }
 .workinfo1 img {
     width: 100px;
     height: 80px;
+}
+.instacartIcon {
+    background: white;
+    border-radius: 20px;
+    padding: 2px;
 }
 .workintro {
     display: flex;
@@ -97,17 +102,17 @@
         gap: 10px;
     }
     .workinfo1 img {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
     }
     .workduty {
         width: 300px;
     }
     .workIcon img {
-        width: 35px;
-        height: 35px;
-        margin: 0 10px;
+        width: 45px;
+        height: 45px;
         padding: 5px;
+        margin: 0 5px;
     }
     .workIcon h3 {
         font-size: 8px;
@@ -116,15 +121,15 @@
         font-size: 13px;
     }
     .workintro h2 {
-        font-size: 13px;
-        font-weight: 800;
+        font-size: 16px;
+        font-weight: 700;
     }
     .workintro p {
-        font-size: 11px;
+        font-size: 12px;
     }
     .workduty li {
-        font-size: 10px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 500;
     }
     .workduty {
         width: 300px;

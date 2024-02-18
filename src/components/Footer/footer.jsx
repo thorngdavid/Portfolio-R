@@ -5,7 +5,7 @@ const footer = () => {
   return (
     <footer className={Style.footer}>
         <p></p>
-        <pre> &copy; 2024  David |  Feel  free  to  drop  a  "Hi" .</pre>
+        <pre> &copy; 2024  David , Feel  free  to  drop  a  Hi .</pre>
     </footer>
   );
 };

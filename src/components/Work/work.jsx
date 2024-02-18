@@ -60,7 +60,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className={styles.workinfo1}>
-                        <img src={instacartIcon} alt="Icon" />
+                        <img src={instacartIcon} alt="Icon" className={styles.instacartIcon}/>
                         <div className={styles.workintro}>
                             <h2>SWE Intern, Instacart</h2>
                             <p>Apr, 2022 - Jun, 2022</p>
