@@ -41,8 +41,19 @@
     align-items: center;
     justify-content: center;
 }
+.navbar li a:hover {
+    border-bottom: 2px solid rgb(91, 91, 91);
+    padding-bottom: 5px;
+}
+.navbar li:first-child:hover a{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.navbar li:first-child:active a{
+    color: gray
+}
 .navbar li a:active {
-    transform: translateY(-5px);
+    border-bottom: 0;
 }
 .navbar li a svg {
     fill: black;
@@ -77,11 +88,7 @@
 .sidebar li a {
     color: black;
     font-weight: 800;
-    transition: transform 0.2s ease;
     font-size: 13px;
-}
-.sidebar li a:active {
-    transform: translateY(-5px);
 }
 @media (min-width: 800px){
     .sidebar{
