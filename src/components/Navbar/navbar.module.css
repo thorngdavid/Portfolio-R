@@ -49,6 +49,10 @@
     border-bottom: 0;
     padding-bottom: 0;
 }
+.navbar li:last-child:hover a{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
 .navbar li:first-child:active a{
     color: gray
 }
