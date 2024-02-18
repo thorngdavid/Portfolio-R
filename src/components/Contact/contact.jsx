@@ -27,6 +27,7 @@ const Contact = () => {
             setVerificationResult('Incorrect. Please try again.');
             setShowSendMessageButton(false);
             setRandomText(generateRandomText());
+            setVerification('');
         }
     }
 
@@ -37,10 +38,11 @@ const Contact = () => {
             return;
         }
 
-        // Implement the logic to send the message
         console.log('Message sent:', { name, email, message });
-        // Reset verification result after successful submission
         setVerificationResult('');
+        setName('');
+        setEmail('');
+        setMessage('');
     }
 
     function handleKeyDown(event) {
