@@ -27,7 +27,6 @@ const Contact = () => {
             setVerificationResult('Incorrect. Please try again.');
             setShowSendMessageButton(false);
             setRandomText(generateRandomText());
-            setVerification('');
         }
     }
 
