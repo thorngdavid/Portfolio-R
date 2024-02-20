@@ -10,7 +10,6 @@
     height: 250px;
     border-radius: 35%;
     animation: moveUpDown 1.5s infinite alternate;
-    margin-bottom: 130px;
 }
 @keyframes moveUpDown {
 0% {
@@ -26,7 +25,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 80px;
 }
 .info1 {
     display: flex;
