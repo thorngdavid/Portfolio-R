@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 80px 0;
 }
 .about h1 {
     color: white;
@@ -115,6 +114,9 @@
     }
     .about2info1 h3 {
         font-size: 13px;
+    }
+    .about {
+        margin: 100px 0;
     }
 }
 @media (max-width: 500px){
