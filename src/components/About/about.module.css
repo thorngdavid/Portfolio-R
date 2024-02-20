@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 250px 0;
 }
 .about h1 {
     color: white;
@@ -67,7 +68,6 @@
 }
 .textscramble {
     color: rgb(200, 200, 200);
-    margin-bottom: 50px;
     font-size: 20px;
 }
 
@@ -96,7 +96,7 @@
         font-size: 16px;
     }
     .aboutSection {
-        margin-bottom: 150px;
+        margin-bottom: 80px;
     }
     .about h1 {
         font-size: 13px;
@@ -124,6 +124,6 @@
 }
 @media (max-height: 700px){
     .aboutImg {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 }

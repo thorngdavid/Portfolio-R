@@ -144,3 +144,9 @@
         margin: 0;
     }
 }
+@media (max-height: 900px){
+    .work {
+        margin-top: 80px;
+        margin-bottom: 250px;
+    }
+}

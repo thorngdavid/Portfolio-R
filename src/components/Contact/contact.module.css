@@ -5,6 +5,8 @@
     justify-content: center;
     flex-direction: column;
     color: white;
+    margin: 90px 0;
+
 }
 .contact h1 {
     color: white;
@@ -154,6 +156,9 @@
 }
 
 @media (max-width: 800px){
+    .contact {
+        margin-bottom: 300px;
+    }
     .contact h1 {
         font-size: 18px;
     }
