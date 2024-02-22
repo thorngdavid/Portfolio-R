@@ -66,8 +66,8 @@
     display: none;
 }
 .sidebar{
-    width: 95px;
-    height: 120px;
+    width: 100px;
+    height: 145px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -110,6 +110,9 @@
         display: none;
     }
     .navbar li:nth-of-type(4){
+        display: none;
+    }
+    .navbar li:nth-of-type(5){
         display: none;
     }
     .navbar li:last-child {

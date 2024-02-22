@@ -116,7 +116,7 @@
         font-size: 13px;
     }
     .about {
-        margin: 100px 0;
+        margin-bottom: 100px;
     }
 }
 @media (max-width: 500px){
