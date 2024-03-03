@@ -23,7 +23,7 @@ const Navbar = () => {
       <ul className={Style.navbar}>
         <li><Link onClick={closeSidebar} to="/">David.</Link></li>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/about">About Me</Link></li>
         <li><Link to="/work">Work</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li>
@@ -41,8 +41,7 @@ const Navbar = () => {
         </li>
       </ul>
       <ul className={`${Style.sidebar} ${showSidebar ? Style.showSidebar : ''}`}>
-        <li onClick={closeSidebar}><Link to="/">Home</Link></li>
-        <li onClick={closeSidebar}><Link to="/about">About</Link></li>
+        <li onClick={closeSidebar}><Link to="/about">About me</Link></li>
         <li onClick={closeSidebar}><Link to="/work">Work</Link></li>
         <li onClick={closeSidebar}><Link to="/contact">Contact</Link></li>
       </ul>

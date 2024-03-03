@@ -102,7 +102,7 @@ const Contact = () => {
 
                         {!showSendMessageButton && (
                             <div className={Style.verificationContainer}>
-                                <p>Verify To Send Message</p>
+                                <p>Verify If You're Not Robot 🤖</p>
                                 <div className={Style.randomTextContainer}>
                                     {randomText.split('').map((letter, index) => (
                                         <span key={index}>{letter}</span>
