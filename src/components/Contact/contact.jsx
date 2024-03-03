@@ -81,8 +81,6 @@ const Contact = () => {
         if (event.key === 'Enter') {
             if (!showSendMessageButton) {
                 handleVerificationSubmit();
-            } else {
-                handleSendMessage();
             }
         }
     }
