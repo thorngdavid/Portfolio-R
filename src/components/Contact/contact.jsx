@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Style from './contact.module.css';
 import checkIcon from '../../assets/contact/check.png';
+import emailjs from 'emailjs-com';
+
+
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -48,13 +51,31 @@ const Contact = () => {
             setVerificationResult('Please fill in all required fields.');
             return;
         }
-
-        console.log('Message sent:', { name, email, message });
-        setVerificationResult('');
-        setName('');
-        setEmail('');
-        setMessage('');
+    
+        const serviceId = 'service_k7xonze';
+        const templateId = 'template_8ofvssx';
+        const userId = 'pOHqYb-FFSuogkusT';
+    
+        const templateParams = {
+            user_name: name,
+            user_email: email,
+            message: message,
+        };
+    
+        emailjs.send(serviceId, templateId, templateParams, userId)
+            .then((response) => {
+                console.log('Email sent successfully:', response);
+                setVerificationResult('');
+                setName('');
+                setEmail('');
+                setMessage('');
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error);
+                setVerificationResult('Error sending email. Please try again later.');
+            });
     }
+    
 
     function handleKeyDown(event) {
         if (event.key === 'Enter') {
