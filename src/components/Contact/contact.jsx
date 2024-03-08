@@ -136,7 +136,7 @@ const Contact = () => {
                                     className={Style.verifyinputField}
                                 />
                                 <button type="button" onClick={handleVerificationSubmit} className={Style.verifyButton}>
-                                    Verify
+                                    Submit
                                 </button>
                                 {showVerificationPassed && (
                                     <div className={Style.verificationPassed}>
