@@ -65,7 +65,6 @@ const TextScramble = () => {
 
   useEffect(() => {
     const phrases = [
-      'THORNGDAVID | TD',
       'FRONTEND DEVELOPER',
       'BACKEND DEVELOPER',
       'UI DESIGNER',

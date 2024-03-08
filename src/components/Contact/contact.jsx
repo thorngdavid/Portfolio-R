@@ -105,7 +105,7 @@ const Contact = () => {
                         {(!email && verificationResult && showSendMessageButton) && <p className={Style.errorMessage}>Please enter your email.</p>}
                         <input
                             type="email"
-                            placeholder="Email"
+                            placeholder="Your Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className={Style.inputField}
@@ -127,7 +127,7 @@ const Contact = () => {
                                         <span key={index}>{letter}</span>
                                     ))}
                                 </div>
-                                {(!verification && verificationResult) && <p className={Style.errorMessage}>Please enter the verification code.</p>}
+                                {(!verification && verificationResult) && <p className={Style.errorMessage}>Please enter the letters.</p>}
                                 <input
                                     type="text"
                                     placeholder="Type the letters"
